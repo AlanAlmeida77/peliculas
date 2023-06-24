@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reseñas de Películas</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap">
+</head>
+<body>
+  <header>
+    <h1>Reseñas de Películas</h1>
+  </header>
+
+  <main>
+    <form id="review-form">
+      <input type="text" id="movie-title" placeholder="Título de la película" required>
+      <input type="url" id="movie-image" placeholder="URL de la imagen" required>
+      <input type="number" id="movie-rating" min="1" max="5" step="0.1" placeholder="Puntuación" required>
+      <textarea id="movie-review" placeholder="Escribe tu reseña" required></textarea>
+      <button type="submit">Enviar reseña</button>
+    </form>
+
+    <div id="reviews-container"></div>
+
+    <div id="review-details-container">
+      <div id="review-details"></div>
+      <button id="close-details-button">Cerrar</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
