@@ -14,20 +14,25 @@
   </header>
 
   <main>
-    <form id="review-form">
-      <input type="text" id="movie-title" placeholder="Título de la película" required>
-      <input type="url" id="movie-image" placeholder="URL de la imagen" required>
-      <input type="number" id="movie-rating" min="1" max="5" step="0.1" placeholder="Puntuación" required>
-      <textarea id="movie-review" placeholder="Escribe tu reseña" required></textarea>
-      <button type="submit">Enviar reseña</button>
-    </form>
+    <section id="review-form-container">
+      <h3>Crea una reseña</h3>
+      <form id="review-form">
+        <input type="text" id="movie-title" placeholder="Título de la película" required>
+        <input type="number" id="movie-year" placeholder="Año de la película" required>
+        <input type="text" id="movie-director" placeholder="Director de la película" required>
+        <input type="url" id="movie-image" placeholder="URL de la imagen" required>
+        <input type="number" id="movie-rating" min="1" max="5" step="0.1" placeholder="Puntuación" required>
+        <textarea id="movie-review" placeholder="Escribe tu reseña" required></textarea>
+        <button type="submit">Enviar reseña</button>
+      </form>
+    </section>
 
-    <div id="reviews-container"></div>
+    <hr>
 
-    <div id="review-details-container">
-      <div id="review-details"></div>
-      <button id="close-details-button">Cerrar</button>
-    </div>
+    <section>
+      <h3>Reseñas</h3>
+      <div id="reviews-container"></div>
+    </section>
   </main>
 
   <script src="script.js"></script>
